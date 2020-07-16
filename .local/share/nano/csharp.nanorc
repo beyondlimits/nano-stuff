@@ -9,11 +9,11 @@ color brightwhite "\<(abstract|as|base|bool|break|byte|case|catch|char|checked|c
 color brightyellow "\<(add|alias|ascending|async|await|descending|dynamic|from|get|global|group|into|join|let|nameof|orderby|partial|partial|remove|select|set|value|var|when|where|where|yield)\>"
 
 # comments
-color brightblack "//.*"
-color brightblack start="/\*" end="\*/"
+color green "//.*"
+color green start="/\*" end="\*/"
 
 # strings
-color green "'(\\.|[^'])'"
+color cyan "'(\\.|[^'])'"
 color cyan "\"(\\.|[^\"])*\""
 
 # trailing whitespace

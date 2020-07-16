@@ -6,7 +6,7 @@ linter pyflakes
 comment "#"
 
 # Function definitions.
-icolor green "def [0-9A-Z_]+"
+icolor brightgreen "def [0-9A-Z_]+"
 
 # Keywords.
 color brightwhite "\<(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|raise|return|try|while|with|yield)\>"
@@ -16,7 +16,7 @@ color cyan "'([^'\]|\\.)+'"
 color cyan ""([^"\]|\\.)+""
 
 # Comments.
-color brightblack "(^|[[:blank:]])#.*$"
+color blue "(^|[[:blank:]])#.*$"
 
 # Triple-quoted strings.
 color cyan start="'''[^'),]" end="(^|[^(\])'''"

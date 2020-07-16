@@ -25,8 +25,8 @@ color green start="\[" end="\]"
 color cyan start="'" end="'"
 
 # comments
-color brightblack "--.*"
-color brightblack start="/\*" end="\*/"
+color blue "--.*"
+color blue start="/\*" end="\*/"
 
 # trailing whitespace
 color ,green "\s+$"
