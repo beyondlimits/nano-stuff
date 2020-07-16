@@ -1,0 +1,13 @@
+set autoindent
+set constantshow
+set linenumbers
+set morespace
+set multibuffer
+set numbercolor brightblack
+set nohelp
+set smooth
+set statuscolor green
+set titlecolor green
+set tabsize 2
+
+include "~/.local/share/nano/*.nanorc"
