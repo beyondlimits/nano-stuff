@@ -1,0 +1,35 @@
+## Here is an example for PHP.
+
+syntax "php" "\.ph(p[23457s~]?|tml)$"
+magic "PHP script"
+comment "//"
+
+# PHP markings.
+color blue "(<\?(php)?|\?>)"
+
+# Function names.
+#color brightyellow "\<[A-Za-z_][A-Za-z_0-9]*"
+
+# Variable names.
+color brightblue "\$[A-Za-z_][A-Za-z_0-9]*"
+
+# Keywords.
+color brightwhite "\<(if|else|elseif|endif)\>"
+color brightwhite "\<(for|foreach|as|do|while|break|continue)\>"
+color brightwhite "\<(function|return)\>"
+color brightwhite "\<(class|trait|new|public|protected|private)\>"
+color brightwhite "\<(namespace|use)\>"
+
+# Common PHP classes
+#color brightblue "\<(SQLite3|Client)\>"
+
+# Strings.
+color yellow ""(\.|[^"])*"" "'(\.|[^'])*'"
+
+# Comments.
+color blue "(^|\s)//.*"
+color blue "(^|\s)#.*"
+color blue start="/\*" end="\*/"
+
+# Trailing whitespace.
+color ,green "[[:space:]]+$"
