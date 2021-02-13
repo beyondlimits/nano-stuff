@@ -3,7 +3,9 @@ syntax "sqlite" "\.sql$"
 comment "-- " "/\*|\*/"
 
 # keywords
-icolor brightwhite "\<(abort|action|add|after|all|alter|analyze|and|as|asc|attach|autoincrement|before|begin|between|by|cascade|case|cast|check|collate|column|commit|conflict|constraint|create|cross|current_date|current_time|current_timestamp|database|default|deferrable|deferred|delete|desc|detach|distinct|drop|each|else|end|escape|except|exclusive|exists|explain|fail|for|foreign|from|full|glob|group|having|if|ignore|immediate|in|index|indexed|initially|inner|insert|instead|intersect|into|is|isnull|join|key|left|like|limit|match|natural|no|not|notnull|null|of|offset|on|or|order|outer|plan|pragma|primary|query|recursive|references|regexp|reindex|release|rename|replace|restrict|right|rollback|row|savepoint|select|set|table|temp|temporary|then|to|transaction|trigger|union|unique|update|using|vacuum|values|view|virtual|when|where|with|without)\>"
+icolor brightwhite "\<(abort|action|add|after|all|alter|analyze|and|as|asc|attach|autoincrement|before|begin|between|by|cascade|case|cast|check|collate|column|commit|conflict|constraint|create|cross|current_date|current_time|current_timestamp|database|default|deferrable|deferred|delete|desc|detach|distinct|drop|each|else|end|escape|except|exclusive|exists|explain|fail|for|foreign|from|full|glob|having|if|ignore|immediate|in|index|indexed|initially|inner|insert|instead|intersect|into|is|isnull|join|key|left|like|limit|match|natural|no|not|notnull|null|of|offset|on|or|order|outer|over|plan|pragma|primary|query|recursive|references|regexp|reindex|release|rename|replace|restrict|right|rollback|row|savepoint|select|set|stored|table|temp|temporary|then|to|transaction|trigger|union|unique|update|using|vacuum|values|view|virtual|when|where|with|without)\>"
+icolor brightwhite "\<group\s+by\>"
+icolor brightwhite "\<generated\s+always\s+as\>"
 
 # functions
 icolor brightcyan "\<(abs|changes|char|coalesce|date|datetime|glob|hex|ifnull|instr|julianday|last_insert_rowid|length|like|likelihood|likely|load_extension|lower|ltrim|max|min|nullif|printf|quote|raise|random|randomblob|replace|round|rtrim|soundex|sqlite_compileoption_get|sqlite_compileoption_used|sqlite_source_id|sqlite_version|strftime|substr|time|total_changes|trim|typeof|unicode|unlikely|upper|zeroblob)\>"
@@ -30,3 +32,6 @@ color blue start="/\*" end="\*/"
 
 # trailing whitespace
 color ,green "\s+$"
+
+# INTEGER PRIMARY KEY
+icolor brightblue "\<INTEGER\s+PRIMARY\s+KEY\>"

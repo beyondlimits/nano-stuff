@@ -5,7 +5,7 @@ magic "PHP script"
 comment "//"
 
 # PHP markings.
-color blue "(<\?(php)?|\?>)"
+icolor blue "(<\?(php)?|\?>)"
 
 # Function names.
 #color brightyellow "\<[A-Za-z_][A-Za-z_0-9]*"
@@ -14,14 +14,24 @@ color blue "(<\?(php)?|\?>)"
 color brightblue "\$[A-Za-z_][A-Za-z_0-9]*"
 
 # Keywords.
-color brightwhite "\<(if|else|elseif|endif)\>"
-color brightwhite "\<(for|foreach|as|do|while|break|continue)\>"
-color brightwhite "\<(function|return)\>"
-color brightwhite "\<(class|trait|new|public|protected|private)\>"
-color brightwhite "\<(namespace|use)\>"
+icolor brightwhite "\<(echo|print)\>"
+icolor brightwhite "\<(if|else|elseif|endif)\>"
+icolor brightwhite "\<(for(each)?|as|do|while|break|continue)\>"
+icolor brightwhite "\<(function|return)\>"
+icolor brightwhite "\<(switch|case)\>"
+icolor brightwhite "\<(class|interface|trait|new|const)\>"
+icolor brightwhite "\<(public|protected|private|static)\>"
+icolor brightwhite "\<(implements|extends)\>"
+icolor brightwhite "\<(namespace|use)\>"
+icolor brightwhite "\<((include|require)(_once)?)\>"
 
-# Common PHP classes
-#color brightblue "\<(SQLite3|Client)\>"
+icolor brightred "\<(try|catch|finally|throw)\>"
+
+icolor brightyellow "\<(array|list)\>"
+
+# Constants
+
+icolor brightmagenta "\<(true|false|null)\>"
 
 # Strings.
 color yellow ""(\.|[^"])*"" "'(\.|[^'])*'"
